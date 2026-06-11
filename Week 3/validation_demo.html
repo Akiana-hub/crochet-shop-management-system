@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>JavaScript Validation Demo</title>
+
+    <script>
+        function validateForm() {
+
+            let product = document.getElementById("product").value;
+
+            if(product == "") {
+                alert("Product name cannot be empty!");
+                return false;
+            }
+
+            return true;
+        }
+    </script>
+
+</head>
+<body>
+
+<h2>Product Validation Form</h2>
+
+<form onsubmit="return validateForm()">
+
+    Product Name:
+    <input type="text" id="product">
+
+    <br><br>
+
+    <input type="submit" value="Submit">
+
+</form>
+
+</body>
+</html>
